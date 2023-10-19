@@ -30,7 +30,10 @@ cd bewise_test
 ```
 docker-compose up -d --build
 ```
-
+Примените миграции
+```
+docker-compose exec web alembic upgrade head
+```
 ## Пример запроса
 **POST** http://127.0.0.1:8004/
 ```
